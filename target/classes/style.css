@@ -1,0 +1,10 @@
+.table-cell {
+    -fx-alignment: CENTER;
+}
+
+.text-area{
+    -fx-font-family: "Segoe UI Semibold";
+    /*-fx-text-fill: blue;*/
+    /*-fx-background-color: white;*/
+}
+

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.working.methods.Controller">
+    <children>
+        <!--      <SplitPane dividerPositions="0.25511152416356875, 0.5218401486988847" focusTraversable="true" layoutX="183.0" layoutY="76.0" prefHeight="300.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">-->
+        <!--         <items>-->
+        <AnchorPane prefHeight="23.0" prefWidth="325.0">
+            <children>
+                <Label fx:id="pathLabel" layoutX="6.0" layoutY="9.0" prefHeight="23.0" prefWidth="325.0" text="路径：" />
+            </children>
+        </AnchorPane>
+
+        <AnchorPane prefHeight="464.0" prefWidth="142.0">
+            <children>
+                <TextArea fx:id="code" layoutX="6.0" layoutY="37.0" prefHeight="288.0" prefWidth="142.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="37.0" />
+                <VBox layoutY="329.0" prefHeight="163.0" prefWidth="141.0" spacing="15.0" AnchorPane.leftAnchor="0.0">
+                    <children>
+                        <Button layoutX="20.0" layoutY="200.0" mnemonicParsing="false" onAction="#calSets" prefHeight="23.0" prefWidth="151.0" text="计算First集和Follow集">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                        <Button layoutX="40.0" layoutY="250.0" mnemonicParsing="false" onAction="#forecast" prefHeight="23.0" prefWidth="145.0" text="构造预测分析表">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                      <Button mnemonicParsing="false" onAction="#exit" prefHeight="23.0" prefWidth="143.0" style="-fx-background-color: #a0a0a0; -fx-text-fill: #ffffff; -fx-font-weight: bold;" text="退出">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+
+        <AnchorPane layoutX="148.0" layoutY="30.0" prefHeight="310.0" prefWidth="178.0">
+            <children>
+                <Label layoutX="8.0" layoutY="6.0" text="first集：" />
+                <TextArea fx:id="firstArea" layoutY="22.0" prefHeight="125.0" prefWidth="178.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="22.0" />
+                <Label layoutX="8.0" layoutY="157.0" text="follow集：" />
+                <TextArea fx:id="followArea" layoutY="175.0" prefHeight="119.0" prefWidth="178.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="175.0" />
+            </children>
+        </AnchorPane>
+
+      <AnchorPane layoutX="148.0" layoutY="324.0" prefHeight="133.0" prefWidth="473.0">
+         <children>
+             <Label layoutX="199.0" layoutY="2.0" prefHeight="23.0" prefWidth="60.0" text="预测分析表" />
+             <!--<TableView fx:id="forecastTable" layoutX="-2.0" layoutY="20.0" prefHeight="155.0" prefWidth="446.0">
+               <columns>
+                  <TableColumn prefWidth="75.0" text="C1" />
+                  <TableColumn prefWidth="75.0" text="C2" />
+                  <TableColumn prefWidth="75.0" text="Column X" />
+                  <TableColumn prefWidth="75.0" text="Column X" />
+                  <TableColumn prefWidth="75.0" text="Column X" />
+                  <TableColumn prefWidth="75.0" text="Column X" />
+               </columns>
+            </TableView>-->
+             <TextArea fx:id="forecastArea" layoutX="-1.0" layoutY="23.0" prefHeight="109.0" prefWidth="473.0" />
+         </children>
+      </AnchorPane>
+
+      <AnchorPane layoutX="328.0" prefHeight="321.0" prefWidth="277.0">
+         <children>
+            <Label layoutX="14.0" layoutY="7.0" text="输入字符串：" />
+            <TextField fx:id="stringField" layoutX="86.0" layoutY="3.0" prefHeight="23.0" prefWidth="120.0" />
+            <Button layoutX="213.0" layoutY="3.0" mnemonicParsing="false" onAction="#analyze" text="语法分析">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <TableView fx:id="resultTable" layoutY="35.0" prefHeight="288.0" prefWidth="291.0">
+              <columns>
+                <TableColumn fx:id="StepColumn" prefWidth="72.0" text="步骤" />
+                <TableColumn fx:id="StackColumn" prefWidth="72.0" text="栈中内容" />
+                  <TableColumn fx:id="StringColumn" prefWidth="72.0" text="剩余字符串" />
+                  <TableColumn fx:id="MapColumn" prefWidth="72.0" text="映射" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+
+        <!--         </items>-->
+        <!--      </SplitPane>-->
+<!--        <children>-->
+<!--            <TextField fx:id="stringField" layoutX="148.0" layoutY="14.0" prefHeight="23.0" prefWidth="111.0" />-->
+<!--            <Button layoutX="262.0" layoutY="14.0" mnemonicParsing="false" onAction="#analyze" prefHeight="23.0" prefWidth="68.0" text="语法分析" />-->
+<!--            <TableView fx:id="resultTable" layoutX="62.0" layoutY="43.0" prefHeight="272.0" prefWidth="282.0" AnchorPane.leftAnchor="62.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="43.0">-->
+<!--                <columns>-->
+<!--                    <TableColumn fx:id="StepColumn" prefWidth="69.0" text="步骤" />-->
+<!--                    <TableColumn fx:id="StackColumn" prefWidth="70.0" text="栈中内容" />-->
+<!--                    <TableColumn fx:id="StringColumn" prefWidth="70.0" text="剩余字符串" />-->
+<!--                    <TableColumn fx:id="MapColumn" prefWidth="70.0" text="映射" />-->
+<!--                </columns>-->
+<!--            </TableView>-->
+<!--            <Label layoutX="69.0" layoutY="18.0" text="输入字符串：" />-->
+<!--        </children>-->
+    </children>
+</AnchorPane>

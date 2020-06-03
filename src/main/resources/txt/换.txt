@@ -1,0 +1,34 @@
+program		S
+stmt-sequence	A
+statement		B
+if-stmt		C
+repeat-stmt	D
+read-stmt		E
+write-stmt	F
+exp		G
+comparison-op	H
+simple-exp	I
+addop		J
+term		K
+mulop		L
+factor		M
+assign-stmt	N
+
+
+if		b
+then		c
+end		d
+else		e
+repeat		f
+until		g
+read		h
+identifier		i
+write		j
+number		k
+
+
+
+
+
+
+

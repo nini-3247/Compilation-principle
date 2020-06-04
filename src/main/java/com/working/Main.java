@@ -1,4 +1,4 @@
-package test.working;
+package com.working;
 
 import javafx.application.Application;
 import javafx.collections.FXCollections;
@@ -10,8 +10,8 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import test.working.classes.AnalysisResult;
-import test.working.methods.Controller;
+import com.working.classes.AnalysisResult;
+import com.working.methods.Controller;
 
 import java.io.File;
 import java.io.IOException;

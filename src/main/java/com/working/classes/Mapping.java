@@ -1,9 +1,8 @@
-package test.working.classes;
+package com.working.classes;
 
-import test.working.classes.*;
-import test.working.classes.Error;
-import test.working.util.CharArrayUtil;
-import test.working.util.RecursionRmvUtil;
+import com.working.util.CharArrayUtil;
+import com.working.util.RecursionRmvUtil;
+import com.working.classes.*;
 
 import java.io.*;
 import java.util.ArrayList;

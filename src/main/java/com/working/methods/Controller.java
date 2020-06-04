@@ -1,16 +1,19 @@
-package test.working.methods;
+package com.working.methods;
 
+import com.working.Main;
+import com.working.classes.AnalysisResult;
+import com.working.classes.Mapping;
+import com.working.classes.SingleRule;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import test.working.Main;
-import test.working.classes.*;
-import test.working.classes.Error;
-import test.working.util.ForecastUtil;
-import test.working.util.SelectUtil;
-import test.working.util.SetToStringUtil;
+import com.working.classes.*;
+import com.working.classes.Error;
+import com.working.util.ForecastUtil;
+import com.working.util.SelectUtil;
+import com.working.util.SetToStringUtil;
 
 import java.io.*;
 import java.util.ArrayList;

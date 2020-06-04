@@ -1,6 +1,6 @@
-package test.working.util;
+package com.working.util;
 
-import test.working.classes.Rule;
+import com.working.classes.Rule;
 
 import java.util.ArrayList;
 import java.util.Map;

@@ -1,9 +1,9 @@
-package test.working.methods;
+package com.working.methods;
 
-import test.working.classes.Mapping;
-import test.working.classes.SingleRule;
-import test.working.util.ForecastUtil;
-import test.working.util.SelectUtil;
+import com.working.classes.SingleRule;
+import com.working.util.SelectUtil;
+import com.working.classes.Mapping;
+import com.working.util.ForecastUtil;
 
 import java.util.ArrayList;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package test.working.classes;
+package com.working.classes;
 
 public class Error {
     public enum Type{FileError,LeftError,LoopError,LL1Error};

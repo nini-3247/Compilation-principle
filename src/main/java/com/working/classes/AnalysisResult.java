@@ -1,4 +1,4 @@
-package test.working.classes;
+package com.working.classes;
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;

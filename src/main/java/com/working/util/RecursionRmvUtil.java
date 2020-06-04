@@ -1,6 +1,6 @@
-package test.working.util;
+package com.working.util;
 
-import test.working.classes.Error;
+import com.working.classes.Error;
 
 import java.util.ArrayList;
 import java.util.Map;

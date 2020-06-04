@@ -1,12 +1,9 @@
-package test.working.util;
+package com.working.util;
 
+import com.working.classes.SingleRule;
 import javafx.beans.property.ReadOnlyStringWrapper;
-import javafx.beans.value.ObservableValue;
-import javafx.collections.ObservableList;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.util.Callback;
-import test.working.classes.SingleRule;
 
 import java.util.ArrayList;
 import java.util.Arrays;

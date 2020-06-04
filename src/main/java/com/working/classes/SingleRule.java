@@ -1,4 +1,4 @@
-package test.working.classes;
+package com.working.classes;
 
 public class SingleRule {
     private Character key;

@@ -1,7 +1,7 @@
-package test.working.methods;
+package com.working.methods;
 
-import test.working.util.CharArrayUtil;
-import test.working.classes.SingleRule;
+import com.working.classes.SingleRule;
+import com.working.util.CharArrayUtil;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -12,7 +12,7 @@ public class PDALL1 {
     private Stack<Character> stack;
     private String string;
     private int ptr;
-    private Map<Integer[],SingleRule> tableMap;
+    private Map<Integer[], SingleRule> tableMap;
     private Character[][] table;
     enum State{ERROR,SUCCEED};
     private State state;

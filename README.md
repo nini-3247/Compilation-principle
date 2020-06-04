@@ -37,10 +37,10 @@ A Simple Syntax Analysis Program<br>
 ### 目录结构
 ---
 >src.main.java......Sources<br>
->>main.com.working......Java类，包括工具类、主类等<br>
+>>main.com.working......Java类所在包，包括工具类、主类等<br>
 
 >resources......Resources<br>
->>txt......文本文件，测试文法和测试字符串<br>
+>>txt......文本文件所在包，测试文法和测试字符串<br>
 >>Overview.fxml......JavaFx的外部页面，存放菜单<br>
 >>RootLayout.fxml......JavaFx的内部页面，放在Overview.fxml内，存放各部分页面内容<br>
 >>style.css......JavaFx的样式表<br>

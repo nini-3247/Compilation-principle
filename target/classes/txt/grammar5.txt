@@ -1,4 +1,0 @@
-P->{S}
-S->V=E|f(E)S
-E->V|E+V|E-V
-V->i
